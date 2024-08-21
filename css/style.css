@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: rgba(206, 72, 175, 0.853);
+  --secondary-color: rgb(214, 36, 161);
+  --text-color: #fff;
+}
+html {
+  background-color: rgb(234, 225, 225);
+  overflow: auto;
+  font-family: montserrat, sans-serif;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+span {
+  font-size: 20px;
+}
+.container {
+  max-width: 1500px;
+  margin: auto;
+  /* padding: 0 5px; */
+}
+.nav-bar {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  background-color: var(--primary-color);
+  height: 30%;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--text-color);
+}
+.nav-min {
+  display: none;
+}
+.nav-logo i {
+  font-size: 50px;
+  color: var(--secondary-color);
+  padding: 0 3rem;
+}
+.nav-logo span {
+  display: none;
+}
+.nav-logo p {
+  text-align: center;
+  color: var(--text-color);
+}
+.box {
+  width: 30rem;
+  padding: 0.7rem 2rem;
+  background-color: rgb(232, 229, 229);
+  color: rgb(184, 180, 180);
+  border: 0;
+  outline: 0;
+}
+.nav-form {
+  position: relative;
+  margin-left: 5px;
+}
+
+.nav-icon {
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  color: rgb(157, 154, 154);
+}
+.nav-profile {
+  padding: 0.8rem 2rem;
+  border: 0;
+  background: transparent;
+  color: var(--text-color);
+}
+.nav-profile i {
+  font-size: large;
+}
+.nav-profile:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+.cart {
+  gap: 2rem;
+}
+.cart:hover {
+  cursor: pointer;
+}
+.nav-items {
+  display: flex;
+  flex-direction: column;
+}
+/* nav store */
+.nav-store {
+  width: 100%;
+  height: 170px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 0.8rem 3rem;
+  gap: 1rem;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgb(196, 193, 193);
+}
+
+.nav-store img {
+  height: 50%;
+}
+
+.electric {
+  background-color: var(--text-color);
+  padding: 1rem 0.5rem;
+  border-radius: 5px;
+}
+.electronic-item {
+  width: 100%;
+  background-color: var(--text-color);
+  height: 250px;
+  object-fit: cover;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1rem;
+}
+.electronic-item img {
+  width: 100%;
+  object-fit: contain;
+  height: 200px;
+}
+.electr-card {
+  border: 1px solid rgb(212, 206, 206);
+  border-radius: 5px;
+  text-align: center;
+}
+/* footer */
+.footer-wraper {
+  padding: 3rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  line-height: 1.5;
+}
+.footer-list {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 3rem;
+}
+.footer-list i {
+  color: rgb(131, 6, 87);
+  text-shadow: 2px 5px 5px;
+}
